@@ -7,6 +7,7 @@ This isn't a full-featured framework to build an EMBL branded website.
 ## What this is
 - Barebones: This is a barebones implementation schematic representation of one possible format for EMBL sites. 
 - Discovery: This tooling will help us discover spacing and navigation structures for EMBL sites.
+- A resource: Use this in your html mockups by including the css `link to css file here`
 
 ## Under the hood
 This is a stripped down Foundation for Sites installation through npm.
