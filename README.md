@@ -1,5 +1,5 @@
-# framework
-The EMBL Design Language framework. This is limited to a very rough schematic for the near/mid future.
+# EMBL Design Language Framework for Webiste
+For the near/mid future this will only be a limited to a very rough schematic.
 
 ## What this isn't
 This isn't a full-featured framework to build an EMBL branded website.
@@ -8,6 +8,7 @@ This isn't a full-featured framework to build an EMBL branded website.
 - Barebones: This is a barebones implementation schematic representation of one possible format for EMBL sites.
 - Discovery: This tooling will help us discover spacing and navigation structures for EMBL sites.
 - A resource: Use this in your html mockups by including the css `link to css file here`
+- For websites: Use this tooling for to build all manner of websites that are primarily EMBL affiliated (EMBL homepage, trainging, people directories, research teams, services, etc.)
 
 ---
 # No non-developers past this point
