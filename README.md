@@ -1,4 +1,4 @@
-# EMBL Design Language Framework for Webiste
+# EMBL Design Language Framework for Webistes
 For the near/mid future this will only be a limited to a very rough schematic.
 
 ## What this isn't
