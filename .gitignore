@@ -52,6 +52,6 @@ typings/
 
 # foundation build
 .DS_Store
-bower_components
+#bower_components
 node_modules
-css
+#css
