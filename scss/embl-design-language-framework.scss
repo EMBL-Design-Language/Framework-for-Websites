@@ -61,7 +61,6 @@
 hr {
     display: block;
     height: 1px;
-    width: 55%;
     border: 0;
     border-top: 1px solid #ccc;
     margin: 1em 0;
@@ -109,12 +108,12 @@ blockquote {
 }
 
 blockquote p {
-    width: 55%;
-    margin-right: 40px;
+    // width: 55%;
+    // margin-right: 40px;
 }
 
 blockquote footer {
-    width: 55%;
+    // width: 55%;
     font-size: 1.1rem;
     text-align: right;
 }
@@ -131,7 +130,7 @@ figure {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
-    max-width: 55%;
+    // max-width: 55%;
     -webkit-margin-start: 0;
     -webkit-margin-end: 0;
     margin: 0 0 3em 0;
@@ -154,7 +153,7 @@ figure.fullwidth figcaption {
 }
 
 /* Links: replicate underline that clears descenders */
-.main-content-area a:link, 
+.main-content-area a:link,
 .main-content-area a:visited {
     color: inherit;
 }
@@ -231,7 +230,7 @@ blockquote .sidenote, blockquote .marginnote {
 }
 
 p, footer, table {
-    width: 55%;
+    // width: 55%;
 }
 
 div.fullwidth, table.fullwidth {
@@ -313,4 +312,110 @@ label.margin-toggle:not(.sidenote-number) {
     img {
         width: 100%;
     }
+}
+
+// Some useful spacing and misc from EBI Visual Framework
+/* intro unit */
+.intro-unit {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  h2 { font-size: 3rem; margin-bottom: 0; }
+  h3 { padding-bottom: 1rem; }
+  .lead { color: $secondary-color; margin-bottom: .5rem; }
+}
+
+/* read more */
+a.read-more,
+a.readmore,
+a.more {
+  white-space: nowrap;
+  &:after {
+    content: " >";
+    font-family: "EBI-Functional";
+    font-size: .85em;
+  }
+}
+
+/* custom spacing */
+.margin-top-none { margin-top: 0; }
+.margin-top-xsmall { margin-top: .1rem; }
+.margin-top-small { margin-top: .25rem; }
+.margin-top-medium { margin-top: .5rem; }
+.margin-top-large { margin-top: 1rem; }
+.margin-top-xlarge { margin-top: 2rem; }
+
+.margin-left-none { margin-left: 0; }
+.margin-left-xsmall { margin-left: .1rem; }
+.margin-left-small { margin-left: .25rem; }
+.margin-left-medium { margin-left: .5rem; }
+.margin-left-large { margin-left: 1rem; }
+.margin-left-xlarge { margin-left: 2rem; }
+
+.margin-right-none { margin-right: 0; }
+.margin-right-xsmall { margin-right: .1rem; }
+.margin-right-small { margin-right: .25rem; }
+.margin-right-medium { margin-right: .5rem; }
+.margin-right-large { margin-right: 1rem; }
+.margin-right-xlarge { margin-right: 2rem; }
+
+.margin-bottom-none { margin-bottom: 0; }
+.margin-bottom-xsmall { margin-bottom: .1rem; }
+.margin-bottom-small { margin-bottom: .25rem; }
+.margin-bottom-medium { margin-bottom: .5rem; }
+.margin-bottom-large { margin-bottom: 1rem; }
+.margin-bottom-xlarge { margin-bottom: 2rem; }
+
+.padding-top-none { padding-top: 0; }
+.padding-top-xsmall { padding-top: .1rem; }
+.padding-top-small { padding-top: .25rem; }
+.padding-top-medium { padding-top: .5rem; }
+.padding-top-large { padding-top: 1rem; }
+.padding-top-xlarge { padding-top: 2rem; }
+
+.padding-left-none { padding-left: 0; }
+.padding-left-xsmall { padding-left: .1rem; }
+.padding-left-small { padding-left: .25rem; }
+.padding-left-medium { padding-left: .5rem; }
+.padding-left-large { padding-left: 1rem; }
+.padding-left-xlarge { padding-left: 2rem; }
+
+.padding-right-none { padding-right: 0; }
+.padding-right-xsmall { padding-right: .1rem; }
+.padding-right-small { padding-right: .25rem; }
+.padding-right-medium { padding-right: .5rem; }
+.padding-right-large { padding-right: 1rem; }
+.padding-right-xlarge { padding-right: 2rem; }
+
+.padding-bottom-none { padding-bottom: 0; }
+.padding-bottom-xsmall { padding-bottom: .1rem; }
+.padding-bottom-small { padding-bottom: .25rem; }
+.padding-bottom-medium { padding-bottom: .5rem; }
+.padding-bottom-large { padding-bottom: 1rem; }
+.padding-bottom-xlarge { padding-bottom: 2rem; }
+
+// Custom stuff for EMBL Visual Language Framework
+// h1.intro { font-size: 6rem; }
+
+// $light-gray: #e6e6e6;
+// $medium-gray: #cacaca;
+// $dark-gray: #8a8a8a;
+// $black: #0a0a0a;
+// $white: #fefefe;
+
+
+.white-color {
+  @at-root .label#{&}, .button#{&}, a#{&}, a:hover#{&}, &, & cite, & a, & a:hover, & a:visited, & h3, & h4 {
+    color: $white;
+  }
+}
+.medium-gray-color {
+  @at-root .label#{&}, .button#{&}, a#{&}, a:hover#{&}, &, & cite, & a, & a:hover, & a:visited, & h3, & h4 {
+    color: $medium-gray;
+  }
+}
+.black-background {
+  @at-root a#{&}, &, &.button, &.button:hover, &.tag { background: $black; }
+}
+.medium-gray-background {
+  @at-root a#{&}, &, &.button, &.button:hover, &.tag { background: $medium-gray; }
 }
