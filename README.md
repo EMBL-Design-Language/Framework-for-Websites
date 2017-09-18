@@ -1,4 +1,4 @@
-# Framework for Webistes
+# Framework for Websites
 
 ##### Part of the EMBL Design Language
 
