@@ -36,3 +36,6 @@ gulp.task('sass-compact', function() {
 gulp.task('default', ['sass-full','sass-compact'], function() {
   gulp.watch(['scss/**/*.scss'], ['sass-full','sass-compact']);
 });
+
+gulp.task('sass-build', ['sass-full','sass-compact'], function() {
+});
