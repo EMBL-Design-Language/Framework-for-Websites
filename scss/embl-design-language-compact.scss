@@ -422,3 +422,10 @@ a.more {
 .medium-gray-background {
   @at-root a#{&}, &, &.button, &.button:hover, &.tag { background: $medium-gray; }
 }
+
+// logo
+.global-masthead a > .logo {
+  float: right;
+  display: block;
+  max-width: 65px;
+}
