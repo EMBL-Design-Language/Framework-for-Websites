@@ -7,8 +7,8 @@ var sassPaths = [
   'bower_components/motion-ui/src'
 ];
 
-gulp.task('sass', function() {
-  return gulp.src('scss/embl-design-language-framework.scss')
+gulp.task('sass-full', function() {
+  return gulp.src('scss/embl-design-language-full.scss')
     .pipe($.sass({
       includePaths: sassPaths,
       outputStyle: 'compressed' // if css compressed **file size**
@@ -20,6 +20,19 @@ gulp.task('sass', function() {
     .pipe(gulp.dest('css'));
 });
 
-gulp.task('default', ['sass'], function() {
-  gulp.watch(['scss/**/*.scss'], ['sass']);
+gulp.task('sass-compact', function() {
+  return gulp.src('scss/embl-design-language-compact.scss')
+    .pipe($.sass({
+      includePaths: sassPaths,
+      outputStyle: 'compressed' // if css compressed **file size**
+    })
+      .on('error', $.sass.logError))
+    .pipe($.autoprefixer({
+      browsers: ['last 2 versions', 'ie >= 9']
+    }))
+    .pipe(gulp.dest('css'));
+});
+
+gulp.task('default', ['sass-full','sass-compact'], function() {
+  gulp.watch(['scss/**/*.scss'], ['sass-full','sass-compact']);
 });
